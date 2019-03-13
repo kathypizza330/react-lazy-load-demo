@@ -4,14 +4,14 @@ import { CHANGE_INPUT, RECEIVE_MESSAGE } from './constants';
 
 // The initial state of the App
 export const initialState = fromJS({
-  username: '',
+  input: '',
   message: '',
 });
 
 function homeReducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE_INPUT:
-      return state.set('input', action.name);
+      return state.set('input', action.input);
     case RECEIVE_MESSAGE:
       return state.set('message', action.message);
     default:

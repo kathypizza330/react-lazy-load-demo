@@ -13,4 +13,4 @@ const makeSelectInput = () =>
 const makeSelectMessage = () =>
   createSelector(selectHome, homeState => homeState.get('message'));
 
-export { selectHome, makeSelectInput, makeSelectMessage };
+export { makeSelectInput, makeSelectMessage };

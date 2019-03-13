@@ -1,9 +1,9 @@
 import { CHANGE_INPUT, RECEIVE_MESSAGE } from './constants';
 
-export function changeInput(name) {
+export function changeInput(input) {
   return {
     type: CHANGE_INPUT,
-    name,
+    input,
   };
 }
 

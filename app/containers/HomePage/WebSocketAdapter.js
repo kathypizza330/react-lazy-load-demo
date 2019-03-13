@@ -16,7 +16,6 @@ export default class WebSocketAdapter {
       };
 
       this.websocket.onclose = () => {
-        emit('DISCONNECTED');
         emit(END);
       };
 

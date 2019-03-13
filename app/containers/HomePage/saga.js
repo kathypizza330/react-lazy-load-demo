@@ -37,7 +37,7 @@ export function* webSocketListenerSaga({ createSocketChannel }) {
 /**
  * Root saga manages watcher lifecycle
  */
-export default function* githubData() {
+export default function* homePageSaga() {
   const webSocketAdapter = new WebSocketAdapter();
 
   yield all([
